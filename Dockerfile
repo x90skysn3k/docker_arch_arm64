@@ -27,7 +27,7 @@ RUN pacman-key --init && \
 
 RUN curl -o /etc/proxychains.conf https://raw.githubusercontent.com/x90skysn3k/dotfiles/main/proxychains.conf
 
-RUN cd /tmp && curl -O https://raw.githubusercontent.com/x90skysn3k/dotfiles/main/install_arch.sh && chmod +x ./install_arch.sh && ./install_arch.sh && rm -rf /tmp/*
+RUN cd /tmp && curl -o https://raw.githubusercontent.com/x90skysn3k/dotfiles/main/install_arch.sh && chmod +x ./install_arch.sh && ./install_arch.sh && rm -rf /tmp/*
 
 WORKDIR /root/
 
