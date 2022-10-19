@@ -8,7 +8,6 @@ ENV HOME /root
 ENV TMUX_PLUGIN_MANAGER_PATH "$HOME/.tmux/plugins/"
 ENV PROXYCHAINS_QUIET_MODE 1
 ENV DISPLAY host.docker.internal:0
-RUN mount -o remount,rw /
 RUN echo "LANG=en_US.UTF-8" > /etc/locale.conf
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 RUN locale-gen
